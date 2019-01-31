@@ -1,0 +1,26 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "This repo is primarily used as a simple webpack example to demonstrate bugs to various parties",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:webpack": "cross-env NODE_ENV=development webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almercier/webpack-example.git"
+  },
+  "author": "Aaron Mercier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almercier/webpack-example/issues"
+  },
+  "homepage": "https://github.com/almercier/webpack-example#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
