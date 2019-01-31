@@ -1,5 +1,8 @@
+import {MyComponent} from "./MyComponent";
+
 let appleButton = document.getElementById('appleButton'),
     apple100Button = document.getElementById('apple100Button'),
+    scopeTestButton = document.getElementById('scopeTestButton'),
     bananaButton = document.getElementById('bananaButton');
 
 appleButton.onclick = function() {
@@ -15,3 +18,9 @@ apple100Button.onclick = function() {
         console.log('apple');
     }
 };
+
+scopeTestButton.onclick = function() {
+    let comp = new MyComponent();
+    comp.tf['keyTyped'].call(comp.tf, 'keyTyped');
+};
+
